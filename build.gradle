@@ -1,0 +1,24 @@
+repositories {
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+}
+
+version = "1.0.0"
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Java Sample',
+                   'Implementation-Version': version
+    }
+}
+
+
+
+
